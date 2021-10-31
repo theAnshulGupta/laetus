@@ -1,0 +1,260 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.0619367, 37.346198]
+      },
+      "properties": {
+        "flush": true,
+        "shower": true,
+        "vault": false,
+        "description": "Clinic",
+        "title": "The Sutcliffe Clinic",
+        "marker-size": "small"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-121.909688, 37.3862086]
+      },
+      "properties": {
+        "flush": false,
+        "shower": false,
+        "vault": true,
+        "description": "Clinic",
+        "title": "Autism Living Leisure & Education Nurturing Inc",
+        "marker-size": "small"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-121.8943326, 37.7098651]
+      },
+      "properties": {
+        "flush": true,
+        "shower": false,
+        "vault": false,
+        "description": "Therapy",
+        "title": "East Bay Kendall Center",
+        "marker-size": "small"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.3387318, 37.5787587]
+      },
+      "properties": {
+        "flush": false,
+        "shower": false,
+        "vault": true,
+        "description": "Clinic",
+        "title": "Center for Learning and Autism Support Services, Inc.",
+        "marker-size": "small"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.4651645, 37.6399861]
+      },
+      "properties": {
+        "flush": false,
+        "shower": false,
+        "vault": true,
+        "description": "Clinic",
+        "title": "Kyo Care",
+        "marker-size": "small"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.3309056, 37.9872318]
+      },
+      "properties": {
+        "flush": false,
+        "shower": false,
+        "vault": true,
+        "description": "Nonprofit, therapy",
+        "title": "California Autism Foundation",
+        "marker-size": "small"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.0899001, 37.3735861]
+      },
+      "properties": {
+        "flush": false,
+        "shower": false,
+        "vault": false,
+        "description": "Education center, therapy",
+        "title": "ICAN Intervention Center for Autism Needs",
+        "marker-size": "small"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.0896459, 37.4264574]
+      },
+      "properties": {
+        "flush": false,
+        "shower": false,
+        "vault": true,
+        "description": "Psychiatrist",
+        "title": "Renaissance Behavioral Medicine",
+        "marker-size": "small"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.0360879, 37.3941131]
+      },
+      "properties": {
+        "flush": false,
+        "shower": false,
+        "vault": true,
+        "description": "Home health care service, therapy",
+        "title": "ACES - Autism Therapy",
+        "marker-size": "small"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.0360879, 37.3941131]
+      },
+      "properties": {
+        "flush": false,
+        "shower": false,
+        "vault": true,
+        "description": "Mental health clinic",
+        "title": "Center For Autism & Related Disorders",
+        "marker-size": "small"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.0360879, 37.3941131]
+      },
+      "properties": {
+        "flush": false,
+        "shower": false,
+        "vault": false,
+        "description": "Psychologist",
+        "title": "Autism Learning Partners San Francisco Peninsula",
+        "marker-size": "small"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.0595177, 37.4509168]
+      },
+      "properties": {
+        "flush": false,
+        "shower": false,
+        "vault": false,
+        "description": "Psychotherapist",
+        "title": "Open Doors Therapy",
+        "marker-size": "small"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.2053186, 37.4662715]
+      },
+      "properties": {
+        "flush": false,
+        "shower": false,
+        "vault": false,
+        "description": "Carriers",
+        "title": "Autism Career Pathways",
+        "marker-size": "small"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.2053186, 37.4662715]
+      },
+      "properties": {
+        "flush": false,
+        "shower": false,
+        "vault": false,
+        "description": "Social services organization",
+        "title": "Foundation For Autistic",
+        "marker-size": "small"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.2053186, 37.4662715]
+      },
+      "properties": {
+        "flush": false,
+        "shower": false,
+        "vault": false,
+        "description": "Learning Center",
+        "title": "Stepping Stones Center-Autistic",
+        "marker-size": "small"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.2053186, 37.4662715]
+      },
+      "properties": {
+        "flush": false,
+        "shower": false,
+        "vault": false,
+        "description": "Social services organization",
+        "title": "Autism Society of America",
+        "marker-size": "small"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.2053186, 37.4662715]
+      },
+      "properties": {
+        "flush": false,
+        "shower": false,
+        "vault": false,
+        "description": "Social services organization",
+        "title": "Levana Autism Support Services",
+        "marker-size": "small"
+      }
+    }
+  ]
+}
