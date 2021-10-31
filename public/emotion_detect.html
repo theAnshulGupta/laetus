@@ -47,8 +47,8 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet"
     />
-    <script defer src="face-api.min.js"></script>
-    <script defer src="emotion.js"></script>
+    <!-- <script defer src="face-api.min.js"></script> -->
+    <!-- <script defer src="emotion.js"></script> -->
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/emotion.css" />
 
@@ -57,7 +57,39 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/face-landmarks-detection@0.0.1/dist/face-landmarks-detection.js"></script> -->
   </head>
   <body>
-    <div class="nav-container">
+    <div id="very-top" style="z-index: 100">
+      <a
+        ><span
+          class="material-icons-outlined"
+          style="
+            padding: 10px;
+            padding-bottom: 0;
+            position: absolute;
+            left: 0;
+            color: black;
+          "
+        >
+          home
+        </span>
+      </a>
+
+      <a
+        ><span
+          class="material-icons-outlined"
+          style="
+            padding: 10px;
+            padding-bottom: 0;
+            position: absolute;
+            right: 0;
+            color: black;
+            font-size: 23px;
+          "
+        >
+          photo_camera
+        </span>
+      </a>
+    </div>
+    <div class="nav-container" style="z-index: 100; background-color: white">
       <nav class="nav">
         <a href="home.html" class="nav-icon">
           <span class="material-icons">home</span>
@@ -77,20 +109,98 @@
       </nav>
     </div>
 
-    <video
-      id="video"
-      crossorigin
-      width="720"
-      height="560"
-      autoplay
-      muted
-    ></video>
-
+    <!-- <video width="400" height="400" autoplay muted crossorigin>
+      <source src="example.mp4" type="video/mp4" />
+    </video> -->
+    <video autoplay controls src="test.mov" id="video"></video>
+    <div class="icons-wrap">
+      <div class="icons-title-1">
+        <div id="element1" onclick="javascript:changeText(1)">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+      </div>
+      <div><p class="instructions">Select an expression to copy:</p></div>
+      <div class="icons2" style="z-index: 10">
+        <div
+          class="happy icon-item"
+          id="icon-item1"
+          onclick="javascript:changeColor(1)"
+        >
+          <img src="images/emotions/1.png" alt="" />
+        </div>
+        <div
+          class="sad icon-item"
+          id="icon-item2"
+          onclick="javascript:changeColor(2)"
+        >
+          <img src="images/emotions/2.png" alt="" />
+        </div>
+        <div
+          class="neutral icon-item"
+          id="icon-item3"
+          onclick="javascript:changeColor(3)"
+        >
+          <img src="images/emotions/4.png" alt="" />
+        </div>
+        <div
+          class="surprised icon-item"
+          id="icon-item4"
+          onclick="javascript:changeColor(4)"
+        >
+          <img src="images/emotions/3.png" alt="" />
+        </div>
+        <div
+          class="disgusted icon-item"
+          id="icon-item5"
+          onclick="javascript:changeColor(5)"
+        >
+          <img src="images/emotions/5.png" alt="" />
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
+    <script>
+      var divItems = document.getElementsByClassName("icon-item");
+
+      function selected(item) {
+        item.style.border = "5px solid #4c62f5";
+      }
+      function changeText(idElement) {
+        var element = document.getElementById("element" + idElement);
+        if (idElement === 1 || idElement === 2) {
+          if (element.innerHTML === "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;")
+            element.innerHTML = "Correct!";
+          else {
+            element.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+          }
+        }
+      }
+
+      function changeColor(idElement) {
+        var element = document.getElementById("icon-item" + idElement);
+        if (element.style.backgroundColor == "rgb(76, 98, 245)") {
+          changeText(1);
+          element.style.backgroundColor = "#62F54C";
+        } else {
+          changeText(1);
+          element.style.backgroundColor = "#4c62f5";
+        }
+
+        // if (element.style.backgroundColor === "grey")
+        //   element.style.backgroundColor = "#4c62f5";
+
+        // if (element.style.backgroundColor === "#4c62f5")
+        //   element.style.backgroundColor = "green";
+        // else {
+        //   element.style.backgroundColor = "pink";
+        // }
+      }
+    </script>
+
     <script src="js/pwa.js"></script>
   </body>
 </html>

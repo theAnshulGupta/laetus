@@ -1,13 +1,79 @@
-body {
-      margin: 0;
-      padding: 0;
-      width: 100vw;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+#video {
+  position: fixed;
+  bottom: 70px;
+  min-width: 100%;
+  min-height: 100%;
+}
 
-    canvas {
-      position: absolute;
-    }
+#very-top {
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 40px;
+  color: #f1f1f1;
+  width: 100%;
+}
+
+.icons-wrap {
+  position: fixed;
+  padding: 20px 0px 20px 0px;
+
+  bottom: 70px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.icon-item {
+  background-color: grey;
+  border-radius: 50px;
+  margin: 0px 5px;
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  position: relative;
+}
+
+.icon-item img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: auto;
+}
+
+/* .happy {
+  animation: background-fade 7s forwards;
+}
+
+.surprised {
+  animation: background-fade 10s forwards;
+}
+
+.sad {
+  animation: background-fade 13s forwards;
+}
+
+@keyframes background-fade {
+  99.9% {
+    background: grey;
+  }
+  100% {
+    background: #4c62f5;
+  }
+} */
+
+.icons-title-1 {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+.instructions {
+  font-size: 13px;
+}

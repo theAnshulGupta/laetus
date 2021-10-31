@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="manifest" href="/js/pwa.webmanifest" />
+    <link
+      rel="apple-touch-icon"
+      href="/images/icons/apple-touch-icon-iphone-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/images/icons//apple-touch-icon-ipad-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/images/icons/apple-touch-icon-iphone-retina-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/images/icons/apple-touch-icon-ipad-retina-152x152.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="white" />
+    <meta charset="utf-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <!-- <script defer src="face-api.min.js"></script> -->
+    <!-- <script defer src="emotion.js"></script> -->
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/emotion.css" />
+
+    <!-- <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.4.0/dist/tf.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/face-landmarks-detection@0.0.1/dist/face-landmarks-detection.js"></script> -->
+  </head>
+  <body>
+    <div id="very-top" style="z-index: 100">
+      <a
+        ><span
+          class="material-icons-outlined"
+          style="
+            padding: 10px;
+            padding-bottom: 0;
+            position: absolute;
+            left: 0;
+            color: black;
+          "
+        >
+          home
+        </span>
+      </a>
+
+      <a
+        ><span
+          class="material-icons-outlined"
+          style="
+            padding: 10px;
+            padding-bottom: 0;
+            position: absolute;
+            right: 0;
+            color: black;
+            font-size: 23px;
+          "
+        >
+          photo_camera
+        </span>
+      </a>
+    </div>
+    <div class="nav-container" style="z-index: 100; background-color: white">
+      <nav class="nav">
+        <a href="home.html" class="nav-icon">
+          <span class="material-icons">home</span>
+        </a>
+        <a href="#" class="nav-icon">
+          <span class="material-icons" id="selected">sentiment_satisfied</span>
+        </a>
+        <a href="map.html" class="nav-icon">
+          <span class="material-icons">map</span>
+        </a>
+        <a href="diagnosis-home.html" class="nav-icon">
+          <span class="material-icons">assessment</span>
+        </a>
+        <a href="chat.html" class="nav-icon">
+          <span class="material-icons">forum</span>
+        </a>
+      </nav>
+    </div>
+
+    <!-- <video width="400" height="400" autoplay muted crossorigin>
+      <source src="example.mp4" type="video/mp4" />
+    </video> -->
+    <video autoplay controls src="test.mov" id="video"></video>
+    <div class="icons-wrap">
+      <div class="icons2">
+        <div class="happy icon-item" onclick="selected(this)">
+          <img src="images/emotions/1.png" alt="" />
+        </div>
+        <div class="sad icon-item" onclick="selected(this)">
+          <img src="images/emotions/2.png" alt="" />
+        </div>
+        <div class="neutral icon-item" onclick="selected(this)">
+          <img src="images/emotions/4.png" alt="" />
+        </div>
+        <div class="surprised icon-item" onclick="selected(this)">
+          <img src="images/emotions/3.png" alt="" />
+        </div>
+        <div class="disgusted icon-item" onclick="selected(this)">
+          <img src="images/emotions/5.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var divItems = document.getElementsByClassName("icon-item");
+
+      function selected(item) {
+        item.style.border = "2px solid #4c62f5";
+      }
+    </script>
+
+    <script src="js/pwa.js"></script>
+  </body>
+</html>

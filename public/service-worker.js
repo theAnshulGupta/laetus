@@ -37,6 +37,8 @@ const toCache = [
   "models/tiny_face_detector_model-weights_manifest.json",
   "models-2/facemo.json",
   "models-2/facemo.weights.bin",
+  "/example.mp4",
+  "/demo.MOV",
 ];
 
 self.addEventListener("install", function (event) {
