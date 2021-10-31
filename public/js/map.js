@@ -52,7 +52,8 @@ var map_filter = function (id_val) {
 function loadMarkers() {
   console.log("creating markers");
   var infoWindow = new google.maps.InfoWindow();
-  geojson_url = "/public/js/maps.json";
+  geojson_url =
+    "https://raw.githubusercontent.com/gizm00/blog_code/master/appendto/python_maps_2/collection.geojson";
   $.getJSON(geojson_url, function (result) {
     // Post select to url.
     data = result["features"];
