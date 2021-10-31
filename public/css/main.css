@@ -632,86 +632,26 @@ iframe {
   }
 }
 
-.profile-bubble-text {
+.profile {
   text-align: center;
-}
-
-.profile-bubble-image {
-  text-align: center;
-  clip-path: circle(60px at center);
-  background: linear-gradient(130deg, #529fbd, #1e0ff8);
-  background-size: 500% 500%;
-  animation: animated-gradient 2s linear infinite;
-}
-
-.profile-bubble {
-  margin-top: 4%;
-}
-
-#calendar {
-  width: 320px;
-}
-#calendar_weekdays div {
+  width: 106px;
+  height: 106px;
   display: inline-block;
-  vertical-align: top;
+  padding: 3px;
+  background: linear-gradient(130deg, #1c35d3, #6d74a9);
+  margin: auto;
+  border-radius: 50%;
+  background-size: 300% 300%;
+  animation: animated-gradient 1s linear infinite;
 }
-#calendar_content,
-#calendar_weekdays,
-#calendar_header {
-  position: relative;
-  width: 320px;
-  overflow: hidden;
-  float: left;
-  /* z-index: 10; */
+
+.profile img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
-#calendar_weekdays div,
-#calendar_content div {
-  width: 40px;
-  height: 40px;
-  overflow: hidden;
-  text-align: center;
-  background-color: #ffffff;
-  color: #787878;
-}
-#calendar_content {
-  -webkit-border-radius: 0px 0px 12px 12px;
-  -moz-border-radius: 0px 0px 12px 12px;
-  border-radius: 0px 0px 12px 12px;
-}
-#calendar_content div {
-  float: left;
-}
-#calendar_content div:hover {
-  background-color: #f8f8f8;
-}
-#calendar_content div.blank {
-  background-color: #e8e8e8;
-}
-#calendar_header,
-#calendar_content div.today {
-  zoom: 1;
-  filter: alpha(opacity=70);
-  opacity: 0.7;
-}
-#calendar_content div.today {
-  color: #ffffff;
-}
-#calendar_header {
-  width: 100%;
-  height: 37px;
-  text-align: center;
-  background-color: #ff6860;
-  padding: 18px 0;
-  -webkit-border-radius: 12px 12px 0px 0px;
-  -moz-border-radius: 12px 12px 0px 0px;
-  border-radius: 12px 12px 0px 0px;
-}
-#calendar_header h1 {
-  font-size: 1.5em;
-  color: #ffffff;
-  float: left;
-  width: 70%;
-}
+
 i[class^="icon-chevron"] {
   color: #ffffff;
   float: left;
@@ -750,5 +690,70 @@ i[class^="icon-chevron"] {
   background-color: #6a7dfe;
   border-radius: 10px;
   padding: 14px;
+  color: white;
+  font-weight: 500;
+
+  background: radial-gradient(130deg, #4c62f5, #6d74a9);
+}
+
+.begin-link {
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px;
+}
+
+@keyframes animated-gradient {
+  25% {
+    background-position: left bottom;
+  }
+  50% {
+    background-position: right bottom;
+  }
+  75% {
+    background-position: right top;
+  }
+  100% {
+    background-position: left top;
+  }
+}
+.map {
+  background-color: #4c62f5;
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+  position: relative;
+}
+.map-icon {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  font-size: 40px;
+  transform: translate(-50%, -50%);
+}
+
+.map-explore-header {
+  text-align: center;
+  font-size: 14px;
+  position: relative;
+  padding: 0;
+}
+.map-explore {
+  margin-top: 15px;
+  margin-left: 15px;
+  position: absolute;
+}
+
+.discover {
+  background-color: #21d4fd;
+  border-radius: 50px;
+  padding: 5px 10px;
+  color: white;
+}
+
+.discuss {
+  background-color: #219efd;
+  border-radius: 50px;
+  padding: 5px 10px;
   color: white;
 }

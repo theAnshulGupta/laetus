@@ -55,8 +55,8 @@
     />
   </head>
   <body>
-    <nav>
-      <a href="#"
+    <div style="top: 0; position: relative">
+      <a
         ><span
           class="material-icons-outlined"
           style="padding: 10px; padding-bottom: 0"
@@ -64,7 +64,16 @@
           settings
         </span>
       </a>
-    </nav>
+
+      <a
+        ><span
+          class="material-icons-outlined"
+          style="padding: 10px; padding-bottom: 0; position: absolute; right: 0"
+        >
+          info
+        </span>
+      </a>
+    </div>
     <div class="nav-container" style="z-index: 100">
       <nav class="nav">
         <a href="#" class="nav-icon">
@@ -86,7 +95,7 @@
     </div>
     <div class="container">
       <div class="profile-bubble row" style="margin-top: 0">
-        <div class="profile-bubble-image col-6">
+        <div class="profile col-6">
           <img src="images/pfp.png" alt="profile" />
         </div>
         <div class="col-6">
@@ -111,15 +120,13 @@
               <h4 class="card-title"><b>Six Day Streak</b></h4>
               <h6 class="card-subtitle mb-2 text-muted">
                 <p class="card-text text-muted small" style="font-weight: 400">
-                  Since Oct. 20, 2021
+                  Keep practicing!
                 </p>
               </h6>
             </div>
             <div class="col-6">
               <div class="begin">
-                <a
-                  href="emotion_detect.html"
-                  style="text-decoration: none; color: inherit; font-size: 15px"
+                <a href="emotion_detect.html" class="begin-link"
                   >Begin Activity!</a
                 >
               </div>
@@ -129,18 +136,19 @@
 
         <div class="card-footer bg-white px-0">
           <div class="row">
-            <div class="col-md-auto">
-              <i class="mdi mdi-settings-outline"></i>
-              <a href="#" class="btn btn-outlined btn-black text-muted"
-                ><img
-                  src="https://img.icons8.com/metro/26/000000/more.png"
-                  width="20"
-                  height="20"
-                  class="mr-2 more"
-                /><small>Disable Streaks</small></a
-              >
-              <span class="vl ml-3"></span>
+            <div class="col-1" style="padding-top: 1.5px">
+              <span class="material-icons-outlined mr-2">more_horiz</span>
             </div>
+            <div class="col-5" style="padding: 0">
+              <a
+                class="btn btn-outlined btn-black text-muted"
+                style="padding-top: 0; padding-left: 6px"
+              >
+                <small>Disable Streaks</small></a
+              >
+            </div>
+
+            <span class="vl ml-3"></span>
           </div>
         </div>
       </div>
@@ -185,7 +193,87 @@
             >
           </div>
         </div>
+
+        <!-- double -->
+        <div class="row" style="padding-left: 12px; padding-right: 12px">
+          <!-- map -->
+          <div class="card col mt-3 border-2 pt-2 active pb-0 px-3">
+            <div class="card-body">
+              <div class="row">
+                <div style="padding-left: 0">
+                  <span class="discover">Discover</span>
+                </div>
+              </div>
+              <div class="row">
+                <div style="padding: 10px 0px 9px 3px">
+                  <span><b>Search for local resources</b></span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-5 map">
+                  <span class="material-icons-outlined map-icon">
+                    location_on
+                  </span>
+                </div>
+                <div class="col-6 map-explore-header">
+                  <div class="map-explore">
+                    <a href="map.html" style="text-decoration: none">
+                      Map
+                      <span
+                        style="font-size: 12px"
+                        class="material-icons-outlined"
+                      >
+                        north_east
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="width: 1px"></div>
+          <!-- chat -->
+          <div class="card col mt-3 border-2 pt-2 active pb-0 px-3">
+            <div class="card-body">
+              <div class="row">
+                <div style="padding-left: 0">
+                  <span class="discuss">Discuss</span>
+                </div>
+              </div>
+              <div class="row">
+                <div style="padding: 10px 0px 9px 3px">
+                  <span><b>Talk directly with your therapist</b></span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-5 map">
+                  <span
+                    class="material-icons-outlined map-icon"
+                    style="font-size: 34px"
+                  >
+                    chat
+                  </span>
+                </div>
+                <div class="col-6 map-explore-header">
+                  <div class="map-explore">
+                    <a href="chat.html" style="text-decoration: none">
+                      Chat
+                      <span
+                        style="font-size: 12px"
+                        class="material-icons-outlined"
+                      >
+                        north_east
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- wrap -->
       </div>
+
       <!-- <div>
           <div id="calendar">
             <div id="calendar_header">
