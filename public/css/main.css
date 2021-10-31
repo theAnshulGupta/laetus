@@ -639,8 +639,116 @@ iframe {
 .profile-bubble-image {
   text-align: center;
   clip-path: circle(60px at center);
+  background: linear-gradient(130deg, #529fbd, #1e0ff8);
+  background-size: 500% 500%;
+  animation: animated-gradient 2s linear infinite;
 }
 
 .profile-bubble {
   margin-top: 4%;
+}
+
+#calendar {
+  width: 320px;
+}
+#calendar_weekdays div {
+  display: inline-block;
+  vertical-align: top;
+}
+#calendar_content,
+#calendar_weekdays,
+#calendar_header {
+  position: relative;
+  width: 320px;
+  overflow: hidden;
+  float: left;
+  /* z-index: 10; */
+}
+#calendar_weekdays div,
+#calendar_content div {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #ffffff;
+  color: #787878;
+}
+#calendar_content {
+  -webkit-border-radius: 0px 0px 12px 12px;
+  -moz-border-radius: 0px 0px 12px 12px;
+  border-radius: 0px 0px 12px 12px;
+}
+#calendar_content div {
+  float: left;
+}
+#calendar_content div:hover {
+  background-color: #f8f8f8;
+}
+#calendar_content div.blank {
+  background-color: #e8e8e8;
+}
+#calendar_header,
+#calendar_content div.today {
+  zoom: 1;
+  filter: alpha(opacity=70);
+  opacity: 0.7;
+}
+#calendar_content div.today {
+  color: #ffffff;
+}
+#calendar_header {
+  width: 100%;
+  height: 37px;
+  text-align: center;
+  background-color: #ff6860;
+  padding: 18px 0;
+  -webkit-border-radius: 12px 12px 0px 0px;
+  -moz-border-radius: 12px 12px 0px 0px;
+  border-radius: 12px 12px 0px 0px;
+}
+#calendar_header h1 {
+  font-size: 1.5em;
+  color: #ffffff;
+  float: left;
+  width: 70%;
+}
+i[class^="icon-chevron"] {
+  color: #ffffff;
+  float: left;
+  width: 15%;
+  border-radius: 50%;
+}
+
+.card__special {
+  margin-top: 20px;
+  position: relative;
+
+  padding: 20px;
+  width: 390px;
+  height: 180px;
+  border-radius: 10px;
+  transition: all 0.2s;
+  background: radial-gradient(#6777df, #4c62f5);
+}
+
+.card__link,
+.card__exit,
+.card__icon {
+  position: relative;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.card__apply {
+  position: absolute;
+  bottom: 25px;
+  font-size: 20px;
+}
+
+.begin {
+  text-align: center;
+  background-color: #6a7dfe;
+  border-radius: 10px;
+  padding: 14px;
+  color: white;
 }

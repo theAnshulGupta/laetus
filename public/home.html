@@ -49,9 +49,23 @@
     />
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+    />
   </head>
   <body>
-    <div class="nav-container">
+    <nav>
+      <a href="#"
+        ><span
+          class="material-icons-outlined"
+          style="padding: 10px; padding-bottom: 0"
+        >
+          settings
+        </span>
+      </a>
+    </nav>
+    <div class="nav-container" style="z-index: 100">
       <nav class="nav">
         <a href="#" class="nav-icon">
           <span class="material-icons" id="selected">home</span>
@@ -70,68 +84,136 @@
         </a>
       </nav>
     </div>
-    <div>
-      <div class="container">
-        <!-- make profile bubble -->
-        <div class="profile-bubble">
-          <div class="profile-bubble-image">
-            <img src="images/pfp.jpg" alt="profile" />
-          </div>
-          <div class="profile-bubble-text">
-            <h1>Test User</h1>
-            <h6 style="font-weight: lighter; margin-top: 1%">test@test.com</h6>
+    <div class="container">
+      <div class="profile-bubble row" style="margin-top: 0">
+        <div class="profile-bubble-image col-6">
+          <img src="images/pfp.png" alt="profile" />
+        </div>
+        <div class="col-6">
+          <div style="position: absolute; padding-top: 30px">
+            <h1>James Smith</h1>
+            <h6 style="font-weight: 300; margin-top: 3px">
+              <span
+                ><img
+                  src="images/dot.png"
+                  alt="online"
+                  style="margin-right: 5px" /></span
+              >Timmy Jr.
+            </h6>
           </div>
         </div>
-        <div class="card mt-5 border-5 pt-2 active pb-0 px-3">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-12">
-                <h4 class="card-title"><b>Something</b></h4>
-              </div>
-              <div class="col">
-                <h6 class="card-subtitle mb-2 text-muted">
-                  <p class="card-text text-muted small">
-                    <span class="vl mr-2 ml-0"></span> Blah blah
-                  </p>
-                </h6>
+      </div>
+
+      <div class="card mt-3 border-2 pt-2 active pb-0 px-3">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-6">
+              <h4 class="card-title"><b>Six Day Streak</b></h4>
+              <h6 class="card-subtitle mb-2 text-muted">
+                <p class="card-text text-muted small" style="font-weight: 400">
+                  Since Oct. 20, 2021
+                </p>
+              </h6>
+            </div>
+            <div class="col-6">
+              <div class="begin">
+                <a
+                  href="emotion_detect.html"
+                  style="text-decoration: none; color: inherit; font-size: 15px"
+                  >Begin Activity!</a
+                >
               </div>
             </div>
           </div>
-          <div class="card-footer bg-white px-0">
-            <div class="row">
-              <div class="col-md-auto">
-                <a
-                  href="#"
-                  class="btn btn-outlined btn-black text-muted bg-transparent"
-                  data-wow-delay="0.7s"
-                  ><img
-                    src="https://img.icons8.com/ios/50/000000/settings.png"
-                    width="19"
-                    height="19"
-                  />
-                  <small>button thing</small></a
-                >
-                <i class="mdi mdi-settings-outline"></i>
-                <a href="#" class="btn btn-outlined btn-black text-muted"
-                  ><img
-                    src="https://img.icons8.com/metro/26/000000/more.png"
-                    width="20"
-                    height="20"
-                    class="mr-2 more"
-                  /><small>more stuff</small></a
-                >
-                <span class="vl ml-3"></span>
-              </div>
+        </div>
+
+        <div class="card-footer bg-white px-0">
+          <div class="row">
+            <div class="col-md-auto">
+              <i class="mdi mdi-settings-outline"></i>
+              <a href="#" class="btn btn-outlined btn-black text-muted"
+                ><img
+                  src="https://img.icons8.com/metro/26/000000/more.png"
+                  width="20"
+                  height="20"
+                  class="mr-2 more"
+                /><small>Disable Streaks</small></a
+              >
+              <span class="vl ml-3"></span>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="cards">
+        <div class="card__special card-1">
+          <div class="row">
+            <div class="card__icon col-10">
+              <span class="material-icons-outlined"> list_alt </span>
+            </div>
+            <div class="card__icon col-1" style="padding-left: 20px">
+              <span class="material-icons-outlined"> close </span>
+            </div>
+          </div>
+          <div style="margin-top: 10px">
+            <h4 class="card-title" style="color: #fff">
+              <b>Complete the diagnostic form</b>
+              <h6 class="card-subtitle mb-2 text-muted">
+                <p
+                  class="card-text text-muted small"
+                  style="font-weight: 400; color: white"
+                >
+                  <i>
+                    <span style="color: white"
+                      >Status:&nbsp
+
+                      <a id="complete" onClick="javascript:changeText(1)">
+                        Complete
+                      </a>
+                    </span>
+                  </i>
+                </p>
+              </h6>
+            </h4>
+          </div>
+          <div class="card__apply">
+            <a class="card__link" href="diagnosis-home.html"
+              >Fill Out
+              <span class="material-icons-outlined" style="font-size: 12px">
+                north_east
+              </span></a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- <div>
+          <div id="calendar">
+            <div id="calendar_header">
+              <i class="icon-chevron-left"></i>
+              <h1></h1>
+              <i class="icon-chevron-right"></i>
+            </div>
+            <div id="calendar_weekdays"></div>
+            <div id="calendar_content"></div>
+          </div> -->
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
+    <!-- <script src="js/calendar.js"></script> -->
+    <script>
+      function changeText(idElement) {
+        var element = document.getElementById("complete");
+        if (idElement === 1 || idElement === 2) {
+          element.innerHTML =
+            '<span style="position: relative"> <span class="material-icons-outlined" style=" font-size: 15px; position: absolute; bottom: 2px; padding-right: 10px; " > warning_amber </span> <span>&nbsp &nbsp &nbsp Incomplete</span> </span>';
+        }
+      }
+    </script>
+
     <script src="js/pwa.js"></script>
   </body>
 </html>
