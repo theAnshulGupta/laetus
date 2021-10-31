@@ -47,10 +47,14 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet"
     />
+    <script defer src="face-api.min.js"></script>
+    <script defer src="emotion.js"></script>
     <link rel="stylesheet" href="css/nav.css" />
-    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.4.0/dist/tf.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/face-landmarks-detection@0.0.1/dist/face-landmarks-detection.js"></script>
+    <link rel="stylesheet" href="css/emotion.css" />
+
+    <!-- <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.4.0/dist/tf.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/face-landmarks-detection@0.0.1/dist/face-landmarks-detection.js"></script> -->
   </head>
   <body>
     <div class="nav-container">
@@ -72,18 +76,16 @@
         </a>
       </nav>
     </div>
-    <div>
-      <canvas id="output"></canvas>
-      <div style="width: 90%; margin: 0 auto; text-align: center; padding: 5%">
-        <video
-          id="webcam"
-          playsinline
-          style="visibility: hidden; width: auto; height: auto"
-        ></video>
-        <h1 id="status">Loading...</h1>
-      </div>
-    </div>
-    <script type="text/javascript" defer src="js/ml.js"></script>
+
+    <video
+      id="video"
+      crossorigin
+      width="720"
+      height="560"
+      autoplay
+      muted
+    ></video>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
