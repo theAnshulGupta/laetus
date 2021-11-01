@@ -183,7 +183,21 @@
                       >Status:&nbsp
 
                       <a id="complete" onClick="javascript:changeText(1)">
-                        Complete
+                        <!-- <span style="position: relative">
+                          <span
+                            class="material-icons-outlined"
+                            style="
+                              font-size: 15px;
+                              position: absolute;
+                              bottom: 2px;
+                              padding-right: 10px;
+                            "
+                          >
+                            warning_amber
+                          </span>
+                          <span>&nbsp &nbsp &nbsp Incomplete</span>
+                        </span> -->
+                        <span>Complete</span>
                       </a>
                     </span>
                   </i>
@@ -318,8 +332,7 @@
       function changeText(idElement) {
         var element = document.getElementById("complete");
         if (idElement === 1 || idElement === 2) {
-          element.innerHTML =
-            '<span style="position: relative"> <span class="material-icons-outlined" style=" font-size: 15px; position: absolute; bottom: 2px; padding-right: 10px; " > warning_amber </span> <span>&nbsp &nbsp &nbsp Incomplete</span> </span>';
+          element.innerHTML = "Complete";
         }
       }
     </script>
